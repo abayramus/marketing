@@ -1,0 +1,34 @@
+.bg-blue{
+    background-color: #073b4c;
+}
+
+.top-part-space{
+    padding: 2% 5%;
+}
+
+.slogan{
+    font-family: "Ubuntu";
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 10%;
+}
+
+/* if screensize is less than 768 px then do not rotate
+if screensize is more than 768 px then rotate
+768px OR MORE */
+@media(min-width: 768px){
+    .image{
+        transform: rotate(25deg);
+        margin-top: 10%;
+    }
+}
+/* 767px OR LESS */
+@media(max-width: 767px){
+    .image{
+        transform: rotate(0deg);
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+}
+

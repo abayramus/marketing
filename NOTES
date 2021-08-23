@@ -1,0 +1,112 @@
+1.Create a folder on the desktop : marketing
+2. drag and drop in the VS Code
+---installation f bootstrap 4----
+3. go to
+https://getbootstrap.com/docs/4.6/getting-started/download/
+
+4. dowload , unzip, and move css and js folders right under the project
+
+
+---containers---
+https://getbootstrap.com/docs/4.6/layout/overview/#containers
+
+container : gives some spage around teh element
+ <div class="container bg-primary">
+                CONTAINER FIELD
+</div>
+---------------
+cotainer-fluid : does not give any spage around the element
+gives full width
+<div class="container-fluid bg-success">
+    CONTAINER FLUID FIELD
+</div>
+
+
+--background color with bootstrap---
+https://getbootstrap.com/docs/4.6/utilities/colors/#background-color
+
+
+*navbar-light -> for getting dark text
+*navbar-dark -> for getting light text
+
+
+
+---IMAGE---
+create a folder under marketing: images
+put the sared image file in that folder
+
+--GRID SYSTEM----
+Table rows and Table columns
+
+-Below will create a row
+<div class="row">
+  
+</div>
+
+-Below creates table columns
+<div class="col">
+    1 of 2
+</div>
+<div class="col">
+    2 of 2
+</div>
+
+-NOTES: col class should be used inside the row class
+
+sm  -> small
+md  -> medium
+lg  -> large
+xl  -> xlarge
+
+-NOTE 
+Numbers hould how much unit each column should be 
+
+EXAMPLE:
+.col-sm-6 : create a column, with 6 UNITS, on small screen
+
+.col-lg-12: create a column, with 12 UNITS, on large screen
+
+.col-md-8: create column, with 8 units, on medium screen
+
+NOTE: Max number = 12 
+
+
+
+
+<div class="col-lg-6 col-md-6 col-sm-12"> 
+
+col-lg-6 : 6 units on large 
+col-md-6 :6 units on medium screen
+col-sm-12 :12 units on small screen
+
+
+---MARGIN and PADDING----
+https://getbootstrap.com/docs/4.6/utilities/spacing/
+m - for classes that set margin
+p - for classes that set padding
+Where sides is one of:
+
+t - for classes that set margin-top or padding-top
+b - for classes that set margin-bottom or padding-bottom
+l - for classes that set margin-left or padding-left
+r - for classes that set margin-right or padding-right
+x - for classes that set both *-left and *-right
+y - for classes that set both *-top and *-bottom
+blank - for classes that set a margin or padding on all 4 sides of the element
+Where size is one of:
+
+0 - for classes that eliminate the margin or padding by setting it to 0
+1 - (by default) for classes that set the margin or padding to $spacer * .25
+2 - (by default) for classes that set the margin or padding to $spacer * .5
+3 - (by default) for classes that set the margin or padding to $spacer
+4 - (by default) for classes that set the margin or padding to $spacer * 1.5
+5 - (by default) for classes that set the margin or padding to $spacer * 3
+auto - for classes that set the margin to auto
+
+
+ml-3 : margin left 3
+
+m-3 : margin in all direction 3 units
+
+pr-4: padding rigth 4 units 
+
