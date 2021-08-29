@@ -28,7 +28,37 @@ if screensize is more than 768 px then rotate
         transform: rotate(0deg);
         margin-top: 5%;
         margin-bottom: 5%;
+        margin-left: 10%;
     }
 
 }
 
+.download-links{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*   padding: 45px 0px; : 45 px top-button, 0 px right-left */
+.top-buttom-space{
+    padding: 45px 0px;
+}
+
+.fas{
+    color: #ffd166;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.r-l-padding{
+    padding: 3% 8%;
+}
+
+.comment{
+    padding: 3% 15%;
+}
+
+/* find id comments and find child of img ONLY */
+#comments img{
+    width: 10%;
+}

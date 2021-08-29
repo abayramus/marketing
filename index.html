@@ -6,10 +6,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/my-style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script> 
+
 </head>
 <body>
-    <section class="bg-blue text-light">
-        <div class="container-fluid top-part-space">
+    <section id="section-one" class="bg-blue text-light">
+        <div class="container-fluid top-part-space r-l-padding">
             <nav class="navbar navbar-expand-lg navbar-dark bg-warning rounded-pill">
                 <a class="navbar-brand" href="#">E-Mail</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,13 +30,13 @@
                 </div>
               </nav>
 
-              <div class="row">
+              <div class="row top-buttom-space">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <h1 class="slogan">Do you want to send your product to millions, with just one click? See our new services and amazing plans. Contact us to learn more about our services. We are here to help you!</h1> 
                     
-                    <div>
-                        <button type="button" class="btn btn-secondary btn-lg"><i class="fab fa-apple mr-2"></i>Large button</button>
-                        <button type="button" class="btn btn-light btn-lg ml-3"><i class="fab fa-android mr-2"></i>Large button</button>
+                    <div class="download-links">
+                        <button type="button" class="btn btn-secondary btn-lg"><i class="fab fa-apple mr-2"></i>Download</button>
+                        <button type="button" class="btn btn-light btn-lg ml-3"><i class="fab fa-android mr-2"></i>Download</button>
                     </div>
                     
 
@@ -46,5 +49,179 @@
           
         </div>
     </section>
+
+    <!-- SECTION 2 -->
+    <section id="adds">
+
+         <!-- container fluid -->
+         <div class="container-fluid r-l-padding">
+          <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <i class="fas fa-rocket fa-4x"></i>
+                <h2>Fast Connection</h2>
+                <p>Connect with many people within 10 minutes</p>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <i class="fas fa-dollar-sign fa-4x"></i>
+                <h2>Great Price</h2>
+                <p>Make your advertisement with low cost</p>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <i class="fas fa-smile fa-4x"></i>
+                <h2>Permanent Adds</h2>
+                <p>Emials are becomming perminent in the customers</p>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <i class="fas fa-comments fa-4x"></i>
+                <h2>One on one Communication</h2>
+                <p>You can connect with directly with the customers</p>
+              </div>
+          </div>
+      </div>
+
+    </section>
+
+
+    <!-- SECTION 3 
+      add section with id=comments
+      as always, we added div= container-fluid to have full width for better layout
+        -added bg-blue for backgroundcolor
+        -added r-l-padding for spacing
+
+    Sliders: added slider from the bootstrap website
+    Design:      
+      texts color: text-light
+      centered the text: text-center
+      added comment class for paddings and spaces on the left - right
+        .comment{
+              padding: 3% 15%;
+          }
+      Added the text in p tag
+      
+      
+      After break:
+          picture/avatar/icon/img
+                names
+    
+
+                apply style to img tag THAT IS ONLY UNDER id="comments"
+  -->
+    <section id="comments">
+
+      <div class="container-fluid bg-blue r-l-padding">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            
+            <div class="carousel-item active text-light text-center comment">
+            <p>I honestly wasn't expecting such a good quality service with this price. Custumer service was very helpful. I keep getting fast responses from the customers.</p>
+            <img class="rounded-circle" src="images/avatar.jpeg" alt="avatar">
+            John Lennon
+            </div>
+           
+            <div class="carousel-item active text-light text-center comment">
+              <p>I honestly wasn't expecting such a good quality service with this price. Custumer service was very helpful. I keep getting fast responses from the customers.</p>
+              <img class="rounded-circle" src="images/avatar.jpeg" alt="avatar">
+              John Lennon
+            </div>
+           
+            <div class="carousel-item active text-light text-center comment">
+              <p>I honestly wasn't expecting such a good quality service with this price. Custumer service was very helpful. I keep getting fast responses from the customers.</p>
+              <img class="rounded-circle" src="images/avatar.jpeg" alt="avatar">
+              John Lennon
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+ 
+
+    <!-- SECTION 4 PRICING -->
+    <section id="pricing">
+      <div class="container-fluid r-l-padding">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-center">
+              <div class="card-header">
+                Monthly
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">9.99$</h5>
+                <p class="card-text">1.000 Main Daily <br>
+                  7/24 Communication <br>
+                  No technical support</p>
+                <a href="#" class="btn btn-primary">BUY</a>
+              </div>
+        
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-center">
+              <div class="card-header">
+                Yearly
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">99.9$</h5>
+                <p class="card-text">1.000 Main Daily <br>
+                  7/24 Communication <br>
+                  Yes technical support.</p>
+                <a href="#" class="btn btn-primary">BUY</a>
+              </div>
+         
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-center">
+              <div class="card-header">
+                Lifelong
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">499.9$</h5>
+                <p class="card-text">No Daily limit <br>
+                  7/24 Communication <br>
+                  Yes technical support</p>
+                <a href="#" class="btn btn-primary">BUY</a>
+              </div>
+           
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+<!-- SECTION 5- footer -->
+<section id="footer">
+  <div class="container-fluid bg-blue text-light">
+    <a href="https://twitter.com/techproedu"> <i class="fab fa-twitter"></i> </a>
+    <a href="https://www.facebook.com/techproeducation ">  <i class="fab fa-facebook"></i> </a>
+    <a href="https://www.instagram.com/techproeducation/"><i class="fab fa-instagram-square"></i></a>
+    <a href="https://www.linkedin.com/company/techproeducation"> <i class="fab fa-linkedin"></i></a>
+    
+   
+    
+   <span class="ml-3"> All Right Reserved &copy <script> document.write( new Date().getFullYear() ); </script> </span>
+    
+
+  </div>
+</section>
+
+
+
 </body>
 </html>

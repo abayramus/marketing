@@ -110,3 +110,6 @@ m-3 : margin in all direction 3 units
 
 pr-4: padding rigth 4 units 
 
+---Carousel---
+Carousel means sliders
+https://getbootstrap.com/docs/5.1/components/carousel/
